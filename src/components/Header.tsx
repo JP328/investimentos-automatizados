@@ -20,7 +20,7 @@ function Header() {
   }
 
   const modal = <Modal 
-    styles="xl:w-1/3 lg:w-1/3 md:w-1/2 max-sm:w-2/3 xl:h-2/5 lg:h-1/3 md:h-2/5 max-sm:h-1/3 top-1/3 max-sm:text-lg" 
+    styles="xl:w-1/4 lg:w-1/3 md:w-2/5 max-sm:w-2/3 xl:h-2/5 lg:h-1/3 md:h-1/3 max-sm:h-2/5 top-1/3 max-sm:text-lg" 
     title={<p>Serviço indisponivel</p>} 
     text={<p>Este serviço ainda não está no ar, aguarde novidades!</p>} 
     closeModal={closeNotification}
