@@ -37,7 +37,7 @@ function StartInvest() {
     return modalContent ?
       modalContent?.type === "confirmar" ?
       <Modal 
-          title= {<p>Tem certeza que deseja <span className="text-green-600">confirmar</span> esse investimento?</p>} 
+          title= {<>Tem certeza que deseja <span className="text-green-600">confirmar</span> esse investimento?</>} 
           text= {
             <>
               <p className="font-bold text-lg md:text-2xl my-1">DISCLAIMER!</p>
@@ -53,11 +53,11 @@ function StartInvest() {
           }
           action={() => toggleOperation(modalContent.index, "ativo", true)} 
           closeModal={toggleModal} 
-          styles="md:w-[85%] md:mx-[8%]"
+          styles="md:w-3/4 md:mx-[12%] xl:h-2/3 max-md:min-h-[500px] md:top-[5%]"
         />
       :
         <Modal 
-          title= {<p>Tem certeza que deseja <span className="text-red-600">cancelar</span> esse investimento?</p>} 
+          title= {<>Tem certeza que deseja <span className="text-red-600">cancelar</span> esse investimento?</>} 
           text= {
             <>
               <p className="font-bold text-lg md:text-2xl my-1">DISCLAIMER!</p>
@@ -72,7 +72,7 @@ function StartInvest() {
           }
           action={() => toggleOperation(modalContent.index, "inativo", true)} 
           closeModal={toggleModal} 
-          styles="xl:w-1/2 w-[80%] md:h-1/2 xl:h-1/2 xl:mx-[24%] mx-[9%]"
+          styles="xl:w-1/2 md:w-3/4 md:h-1/2 xl:h-1/2 xl:mx-[20%] md:mx-[12%]"
         />
     : null
   }
@@ -121,19 +121,19 @@ function StartInvest() {
       <div className="w-full min-h-[600px] ">
        <h2 ref={ref} id="investir" className="my-8 text-center text-3xl font-bold text-blue-900">INVESTIR</h2>
         <div className="
-          w-4/5  max-md:ml-10 flex flex-col max-md:items-center text-white pl-4 bg-gradient-to-r from-sky-700 to-sky-900 shadow-blue-950 shadow-lg"
+          w-4/5  max-md:ml-10 flex flex-col max-md:items-center text-white pl-4 bg-gradient-to-r from-sky-700 to-sky-900 shadow-blue-950 shadow-md"
         >
           <h3 className="text-xl max-md:text-2xl mt-2">Escolha sua corretora:</h3>
         
           {operating.map((corretora, index) => {
               return(
-                <div key={corretora.id} className="w-3/4 lg:h-32 h-72 my-8 flex flex-col justify-between">
+                <div key={corretora.id} className="w-3/4 lg:h-32 md:h-44 h-72 my-8 flex flex-col max-md:justify-between">
                   <div className="mt-2 flex max-md:flex-col max-md:items-center justify-between">
                     <div className="md:w-[300px]">
-                      <h4 className="text-3xl font-bold">{corretora.nomeCorretora}</h4>
+                      <h4 className="sm:text-2xl text-3xl font-bold">{corretora.nomeCorretora}</h4>
                     </div>
-                    <div className="flex flex-col justify-between my-7"> 
-                      <h5 className="mb-3 text-2xl font-semibold">Mini Índice</h5>
+                    <div className="md:mx-3 flex flex-col justify-between max-md:my-7 mb-2"> 
+                      <h5 className="max-md:w-full mb-3 text-2xl font-semibold">Mini Índice</h5>
                       {
                         corretora.active === "ativo" ?
                         <button 
