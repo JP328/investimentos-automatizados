@@ -82,14 +82,14 @@ function StartInvest() {
       <div className="relative">
       {window.screen.width >= 760 ?
           <img 
-            src="/startinvest.jpeg" 
-            alt="Two robots"
+            src="/investimentos-automatizados/startinvest.jpeg" 
+            alt="Robot-showing-candles2"
             className="w-full h-full min-h-[600px] opacity-70" 
           />
           :
           <img 
-            src="/startinvest-mobile.jpeg" 
-            alt="Two robots"
+            src="/investimentos-automatizados/startinvest-mobile.jpeg" 
+            alt="Robot-showing-candles2"
             className="w-full h-full min-h-[600px] opacity-70" 
           />
         }

@@ -4,14 +4,14 @@ function Home() {
       <div className="relative bg-blue-800 h-full">
         {window.screen.width >= 760 ?
           <img 
-          src="/homepage.jpeg" 
-          alt="brett-jordan-5L0R8ZqPZHk-unsplash"
+          src="/investimentos-automatizados/homepage.jpeg" 
+          alt="Robot-showing-candles"
           className="w-full max-xl:h-full" 
           />
           :
           <img 
-          src="/homepage-mobile.jpeg" 
-          alt="brett-jordan-5L0R8ZqPZHk-unsplash"
+          src="/investimentos-automatizados/homepage-mobile.jpeg" 
+          alt="Robot-showing-candles"
           className="w-full max-xl:h-full" 
           />  
         }

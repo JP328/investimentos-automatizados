@@ -7,9 +7,9 @@ function MainRoutes() {
   return(
     <BrowserRouter>
       <Routes>
-        <Route path='/Startup-De-Investimento/' element={<BasePage/>} >
+        <Route path='/investimentos-automatizados/' element={<BasePage/>} >
           <Route index element={<Home/>} />
-          <Route path='/Startup-De-Investimento/StartInvest' element={<StartInvest/>} />
+          <Route path='/investimentos-automatizados/StartInvest' element={<StartInvest/>} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -51,17 +51,17 @@ function Header() {
           <RxExit/>
         </div>
         <div className="hover:text-cyan-600" onClick={toggleMenu}>
-          <Link to={'/Startup-De-Investimento/'}>Home</Link>
+          <Link to={'/investimentos-automatizados/'}>Home</Link>
         </div>
         <div className="hover:text-cyan-600" onClick={toggleMenu}>
-          <Link to={'/Startup-De-Investimento/StartInvest'}>Comece Aqui</Link>
+          <Link to={'/investimentos-automatizados/StartInvest'}>Comece Aqui</Link>
         </div>
         <div className="hover:text-cyan-600" onClick={() => notification()}>
-          {/* <Link to={'/Startup-De-Investimento/AboutUs'}>Quem Somos</Link> */}
+          {/* <Link to={'/investimentos-automatizados/AboutUs'}>Quem Somos</Link> */}
           Quem somos
         </div>
         <div className="hover:text-cyan-600" onClick={() => notification()}>
-          {/* <Link to={'/Startup-De-Investimento/ClientArea'}>Área do Cliente</Link> */}
+          {/* <Link to={'/investimentos-automatizados/ClientArea'}>Área do Cliente</Link> */}
           Área do Cliente
         </div>
         {showModal && modal}
