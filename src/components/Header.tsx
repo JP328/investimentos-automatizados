@@ -20,11 +20,11 @@ function Header() {
   }
 
   const modal = <Modal 
-    styles="xl:w-2/5 xl:h-2/5 lg:w-1/3 lg:h-1/4 md:w-1/2 md:h-1/3 w-3/4 max-sm:h-1/4 top-1/3 max-sm:text-lg" 
+    styles="xl:w-1/3 lg:w-1/3 md:w-1/2 max-sm:w-2/3 xl:h-2/5 lg:h-1/3 md:h-2/5 max-sm:h-1/3 top-1/3 max-sm:text-lg" 
     title={<p>Serviço indisponivel</p>} 
     text={<p>Este serviço ainda não está no ar, aguarde novidades!</p>} 
     closeModal={closeNotification}
-    action={notification}
+    modalType="Notification"
   />
 
   const [showMenu, setShowMenu] = useState(false);

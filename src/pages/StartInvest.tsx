@@ -15,6 +15,7 @@ function StartInvest() {
     // {id: 2, nomeCorretora: "EQI Investimentos", active: "inativo"},
     // {id: 3, nomeCorretora: "XP Investimentos", active: "inativo"}
   ]
+  
   const [operating, setOperating] = useState(data);
   const [modalContent, setModalContent] = useState<modalContentProps>(); 
   const {showModal, toggleModal} = useModal();
@@ -53,7 +54,7 @@ function StartInvest() {
           }
           action={() => toggleOperation(modalContent.index, "ativo", true)} 
           closeModal={toggleModal} 
-          styles="md:w-3/4 md:mx-[12%] xl:h-2/3 max-md:min-h-[500px] md:top-[5%]"
+          styles="md:w-3/4 md:mx-[14%] xl:h-2/3 max-md:min-h-[500px] md:top-[5%]"
         />
       :
         <Modal 
@@ -72,7 +73,7 @@ function StartInvest() {
           }
           action={() => toggleOperation(modalContent.index, "inativo", true)} 
           closeModal={toggleModal} 
-          styles="xl:w-1/2 md:w-3/4 md:h-1/2 xl:h-1/2 xl:mx-[20%] md:mx-[12%]"
+          styles="xl:w-1/2 md:w-3/4 md:h-1/2 xl:h-1/2 xl:mx-[20%] md:mx-[14%]"
         />
     : null
   }
